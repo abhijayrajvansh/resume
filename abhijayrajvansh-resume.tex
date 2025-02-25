@@ -1,0 +1,306 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{center}
+    {\Huge \scshape Abhijay Rajvansh} \\ \vspace{1pt}
+    Software Engineer, AI Agents and SaaS Developer! \\ \vspace{1pt}
+
+    \small\href{mailto:abhijayrajvansh.work@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{abhijayrajvansh.work@gmail.com}} ~
+    \href{https://www.linkedin.com/in/abhijayrajvansh/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin/abhijayrajvansh}}  ~
+    \href{https://github.com/abhijayrajvansh}{\raisebox{-0.2\height}\faGithub\ \underline{github/abhijayrajvansh}} ~
+    \href{www.abhijayrajvansh.com}{\raisebox{-0.2\height}\  \underline{visit my portfolio}} ~
+    \vspace{-8pt}
+\end{center}
+
+
+
+%-----------Technical Skills-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+   \textbf{AI Infrastructure}{: LLMs \& RAG, LangChain, LlamaIndex, Ollama, OpenAI API, Hugging Face Transformers, Pinecone.} \\
+   \textbf{Languages}{: TypeScript (JavaScript), Python, SQL, GraphQL, C++, Bash, Go.} \\
+   \textbf{Frameworks \& Libraries}{: Next.js, Node.js, Express.js, React, TensorFlow, Pandas, Django, Expo, Prisma ORM.} \\
+   \textbf{DevOps \& Tools}{: Git, Linux, CI/CD, GitHub Actions, Docker, Kubernetes, Terraform, Nginx, Cloudflare.} \\
+   \textbf{Cloud \& Security}{: AWS, GCP, Azure, Vercel, Firebase, Supabase, Hugging Face Inference API, Firewall, VPS.} \\
+  }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Uptut}{Oct 2024 -- Present}
+      {AI Engineer (Lead)}{Gurugram, Haryana, India}
+      \resumeItemListStart
+        \resumeItem{Collaborated closely with product teams to design and implement LLM-driven AI agents, resulting in a 95\% reduction of human input in operational processes.}
+        \resumeItem{Authored a comprehensive white paper defining an Open Banking System Design for API developers, including architecture and business workflow strategies.}
+        \resumeItem{Led technical discussions with stakeholders to translate business needs into functional AI features, ensuring alignment with project goals and timelines.}
+        \resumeItem{Introduced agile methodologies within the team, enhancing the efficiency of project delivery and responsiveness to changing requirements.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bling Cloud, Techstars'23}{Feb 2023 -- November 2023}
+      {Software Engineer (Founding Team)}{Remote, San Francisco Bay Area}
+      \resumeItemListStart
+        \resumeItem{Engineered the MVP for an innovative cloud platform, integrating with major messaging services to facilitate seamless user interaction.}
+        \resumeItem{Designed and implemented secure APIs for user authentication and profile management, enhancing user experience and platform reliability.}
+        \resumeItem{Provided mentorship to interns, fostering growth, and optimizing development practices to maintain code quality and performance levels.}
+        \resumeItem{Committed to remote collaboration across time zones, adapting to US standards for timely product updates and deployments.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Apple, iMac Labs, SRMIST}{Oct 2022 -- November 2022}
+      {Software Engineer, iOS Design}{Chennai, TN}
+      \resumeItemListStart
+        \resumeItem{Selected from a competitive pool of 18,000 candidates for prestigious iOS App Development program, highlighting exceptional skill and potential.}
+        \resumeItem{Developed a functional prototype app through rigorous testing and debugging, achieving a seamless user experience.}
+        \resumeItem{Demonstrated superior problem solving by addressing and resolving runtime errors, enabling the project's advancement to the next development stage.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {NHS}{Jul 2022 -- October 2022}
+      {AI Research Intern, Object Detection}{Remote, Luton, England, United Kingdom}
+      \resumeItemListStart
+        \resumeItem{Directed a critical project that applied deep learning techniques to automate orthopedic implant identification, achieving a predictive accuracy of 97\%.}
+        \resumeItem{Utilized advanced algorithms, including YOLOv7 and CNN, to enhance model performance and reliability in medical applications.}
+        \resumeItem{Collaborated with medical professionals to ensure alignment of technical solutions with clinical requirements and standards.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Unacademy}{Mar 2022 -- October 2022}
+      {Algorithms Educator \& TA}{Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Instructed students on key programming concepts including Data Structures and OOP, effectively boosting understanding through personalized support.}
+        \resumeItem{Resolved over 500 coding queries, utilizing strategic problem-solving to suggest optimized solutions and enhance learning outcomes.}
+        \resumeItem{Facilitated virtual learning sessions, adapting educational strategies to engage diverse student backgrounds and enhance comprehension.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IEEE}{Nov 2021 -- September 2022}
+      {Research And Development Engineer}{Chennai, Tamil Nadu, India}
+      \resumeItemListStart
+        \resumeItem{Collaborated in interdisciplinary teams on AI/ML projects tailored for the healthcare and engineering sectors, optimizing project outcomes.}
+        \resumeItem{Documented research findings and technical specifications to support innovative solutions in AI applications across various domains.}
+        \resumeItem{Contributed to the development of streamlined processes that improved project timelines and deliverables through efficient teamwork.}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Publications and Research}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Open Banking System Design \& Architecture} $|$ \emph{White Paper}}{November 2024}
+          \resumeItemListStart
+            \resumeItem{Authored a comprehensive framework analyzing Open Banking implementations across UK, EU, India, and Africa, impacting 50+ financial institutions.}
+            \resumeItem{Developed a layered architectural model achieving 99.9\% uptime for API services while reducing integration time by 60\%.}
+            \resumeItem{Introduced standardized protocols resulting in 40\% cost reduction in Banking-as-a-Service (BaaS) implementations.}
+            \resumeItem{Established security and data governance frameworks adopted by 15+ banking partners, protecting over 1M+ customer transactions.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Object Detection for Orthopaedic Implants} $|$ \emph{Research Paper}}{July 2022}
+          \resumeItemListStart
+            \resumeItem{Developed an AI-powered detection system for Total Hip Arthroplasty implants, achieving 97\% accuracy in identification.}
+            \resumeItem{Reduced preoperative planning time by 75\% through automated implant analysis, benefiting 1000+ surgical cases annually.}
+            \resumeItem{Implemented deep learning algorithms resulting in 90\% reduction in manual identification errors and 65\% cost savings.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------OPEN SOURCE-----------
+\section{Open Source Contributions}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI Frameworks \& Fullstack SDK} $|$ \emph{TypeScript, Python, LLMs}}{2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed high-performance chat inference system with Ollama LLMs, achieving 40\% faster response times.}
+            \resumeItem{Created comprehensive SDK for AI applications, serving 2000+ monthly developers.}
+            \resumeItem{Implemented efficient vector storage solutions, reducing embedding costs by 35\% while maintaining accuracy.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Solana Labs \& ZetaChain} $|$ \emph{Rust, Blockchain}}{2024}
+          \resumeItemListStart
+            \resumeItem{Contributed to Solana's core protocol improvements and smart contract optimizations, impacting 1M+ daily transactions.}
+            \resumeItem{Enhanced ZetaChain protocol contracts, implementing cross-chain functionality used by 50k+ users.}
+            \resumeItem{Developed security patches and performance improvements, reducing transaction validation time by 25\%.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Trading Bots, Crypto Wallet Generator \& NextUI} $|$ \emph{TypeScript, React}}{2022}
+          \resumeItemListStart
+            \resumeItem{Built open-source crypto wallet trading bot tool with supporting centralized exchange like Binance and CoinDCX.}
+            \resumeItem{Contributed UI components to NextUI library, improving accessibility and mobile responsiveness for 10k+ developers.}
+            \resumeItem{Authored comprehensive documentation and integration guides, reducing implementation time by 60\%.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------INVOLVEMENT---------------
+\section{Awards and Achievements}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item Winner at Smart India Hackathon 2023 (Healthcare Project).
+        \item Qualified for Facebook/Meta Hacker Cup 2022 Round 1, secured Global Rank 6994.
+        \item Google Hash Code 2022 - Global Rank 4895, Country Rank 804 among 10,000+ participating teams.
+        \item Secured University Rank 2 in Coding Ninjas Intra-College Competition'2021 among 8,000+ participants.
+        \item National Cyber Olympiad (NCO 2018) - Achieved State Rank 1 and All India Rank 16.
+    \end{itemize}
+\vspace*{2.0\multicolsep}
+%\resumeSubHeadingListEnd
+
+% ------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item Data Structures
+                \item Software Methodology
+                \item Algorithms Analysis
+                \item Database Management
+                \item Artificial Intelligence
+                \item Internet Technology
+                \item Systems Programming
+                \item Computer Architecture
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+% -----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Self Taught: AI, LLMs and Full-Stack Development}{Sep. 2024 -- Present}
+    {Learning and Building}{Remote}
+  \resumeSubheading
+    {Harvard's CS50: Introduction to Computer Science}{Sep. 2023 -- May 2024}
+    {Online Course}{edX Platform}
+  \resumeSubheading
+    {SRM Institute of Science and Technology}{Sep. 2020 -- Dec 2023}
+    {Completed coursework with 3.9 GPA towards a Bachelor's in Computer Science}{Chennai, TN}
+\resumeSubHeadingListEnd
+
+
+\end{document}
